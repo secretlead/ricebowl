@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran dan Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-box {
+            background-color: #fff;
+            padding: 30px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            margin-bottom: 15px;
+        }
+
+        .input-box label {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        .toggle-link {
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+            color: #333;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .toggle-link:hover {
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Pendaftaran -->
+        <div class="form-box" id="register-box">
+            <h2>Pendaftaran Akun</h2>
+            <div class="input-box">
+                <label for="register-username">Username:</label>
+                <input type="text" id="register-username" placeholder="Masukkan username">
+            </div>
+            <div class="input-box">
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" placeholder="Masukkan password">
+            </div>
+            <div class="input-box">
+                <label for="register-password-confirm">Konfirmasi Password:</label>
+                <input type="password" id="register-password-confirm" placeholder="Konfirmasi password">
+            </div>
+            <button class="btn">Daftar</button>
+            <span class="toggle-link" onclick="toggleForm()">Sudah punya akun? Login di sini</span>
+        </div>
+
+        <!-- Login -->
+        <div class="form-box" id="login-box" style="display: none;">
+            <h2>Login</h2>
+            <div class="input-box">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" placeholder="Masukkan username">
+            </div>
+            <div class="input-box">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" placeholder="Masukkan password">
+            </div>
+            <button class="btn">Login</button>
+            <span class="toggle-link" onclick="toggleForm()">Belum punya akun? Daftar di sini</span>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm() {
+            const registerBox = document.getElementById('register-box');
+            const loginBox = document.getElementById('login-box');
+            if (registerBox.style.display === 'none') {
+                registerBox.style.display = 'block';
+                loginBox.style.display = 'none';
+            } else {
+                registerBox.style.display = 'none';
+                loginBox.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimoni</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 20px;
+            color: #5a2b2b;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #5a2b2b;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .gallery {
+            width: 40%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .box {
+            width: 100%;
+            padding-bottom: 100%;
+            background-color: #ccc;
+            position: relative;
+        }
+
+        .testimony-form {
+            width: 50%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimony-form h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .tags {
+            margin-bottom: 15px;
+        }
+
+        .tags label {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .tags input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .testimony-box {
+            margin-bottom: 15px;
+        }
+
+        .testimony-box textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .send-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #ccc;
+            color: #333;
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            border: 1px solid #333;
+            cursor: pointer;
+        }
+
+        .send-btn:hover {
+            background-color: #999;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Pesanan</a></li>
+                <li><a href="testimoni.html">Testimoni</a></li>
+                <li><a href="index.html">Beranda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <div class="grid">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </section>
+
+        <section class="testimony-form">
+            <h2>TESTIMONI</h2>
+
+            <div class="tags">
+                <label for="tags">tags:</label>
+                <input type="text" id="tags" name="tags">
+            </div>
+
+            <div class="testimony-box">
+                <textarea placeholder="Masukkan testimoni anda"></textarea>
+            </div>
+
+            <button class="send-btn">SEND</button>
+        </section>
+    </main>
+</body>
+</html>

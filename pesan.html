@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pemesanan</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.location-delivery {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.maps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.maps {
+    width: 60%;
+}
+
+.map-placeholder {
+    background-color: #ccc;
+    height: 150px;
+    border: 2px solid #333;
+    position: relative;
+}
+
+.map-placeholder::before {
+    content: "MAPS";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.address-info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.address-field {
+    background-color: #d8d8d8;
+    height: 20px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.edit-btn {
+    background-color: #7f83eb;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.confirm-btn, .order-btn {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.order-btn {
+    background-color: #b3b3b3;
+}
+
+.confirm-btn:hover, .order-btn:hover, .edit-btn:hover {
+    background-color: #a3a3a3;
+}
+
+</style>
+<body>
+    <div class="location-delivery">
+        <h2>Location Delivery</h2>
+        <div class="maps-container">
+            <div class="maps">
+                <!-- Placeholder for map (could be replaced with an actual map embed) -->
+                <div class="map-placeholder"></div>
+            </div>
+            <div class="address-info">
+                <div class="address-field">Your Address</div>
+                <div class="address-field">Street Name</div>
+                <div class="address-field">City, State</div>
+                <button class="edit-btn">edit</button>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="confirm-btn">Konfirmasi</button>
+            <button class="order-btn">Pesan</button>
+        </div>
+    </div>
+    
+</body>
+</html>

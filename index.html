@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowl Blast</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: gainsboro;
+    }
+    nav {
+        margin-top: 15px;
+        display: flex;
+        padding: 5;
+        margin-left: 20px;
+    }
+    nav img {
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        margin-right: 50px;
+    }
+    nav h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 20px;
+    }
+    nav a{
+        margin-left: 20px;
+        text-decoration: none;
+        background-color: plum;
+        height: 30px;
+        width: 100px;
+        text-align: center;
+        padding-top: 5px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .main {
+        display: flex;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    .main img {
+        width: 300px;
+        height: 300px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.307);
+        margin-right: 50px;
+    }
+    .cap {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 40px;
+    }
+    .cap h1{
+        text-align: center;
+    }
+    .cap p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .cap button{
+        background-color: plum;
+        border-radius: 20px;
+        height: 40px;
+        width: 150px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .btn {
+        display: flex;
+    }
+    /* Global styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.arrow {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    padding: 0 20px;
+    user-select: none;
+}
+
+.team-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: #ccc;
+}
+
+.member-info {
+    text-align: center;
+}
+
+.member-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.logo-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo-section p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.navigation-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+</style>
+<body>
+    <nav>
+        <img src="WhatsApp Image 2024-10-18 at 1.20.44 PM.jpeg" alt="logo">
+        <h1>Bowl Blast</h1>
+        <a href="#" style="margin-left: 700px;">Shopee</a>
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+    </nav>
+    <div class="main">
+        <img src="WhatsApp Image 2024-10-18 at 1.20.45 PM.jpeg" alt="rice bawl">
+        <div class="cap">
+            <h1>Rice Bawl</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus eius voluptatibus voluptates </p>
+            <p>ea optio vero libero aut ad neque. Illum sit totam aliquid eligendi, quisquam repudiandae ducimus nesciunt exercitationem.</p>
+            <div class="btn">
+                <a href="daftar.html">
+                    <button style="margin-left: 300px; margin-right: 10px;">daftar</button>
+                </a>
+                <a href="menu.html">
+                    <button>menu</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="team-section">
+        <h2>Our Team</h2>
+        <div class="carousel">
+            <div class="arrow left-arrow">&lt;</div>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="path_to_image1.jpg" alt="Team Member">
+                    <div class="member-info">
+                        <p>Ahmad Sukur</p>
+                        <p>Role 1</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="path_to_image2.jpg" alt="Team Member">
+                    <div class="member-info">
+                        <p>Esa Fitri Rokhiyansa</p>
+                        <p>Role 2</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="path_to_image3.jpg" alt="Team Member">
+                    <div class="member-info">
+                        <p>FitriJulianti </p>
+                        <p>Role 3</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="path_to_image4.jpg" alt="Team Member">
+                    <div class="member-info">
+                        <p>Putri Maizatu Rizky</p>
+                        <p>Role 4</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="path_to_image5.jpg" alt="Team Member">
+                    <div class="member-info">
+                        <p>Ria Savira</p>
+                        <p>Role 5</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="path_to_image6.jpg" alt="Team Member">
+                    <div class="member-info">
+                        <p>Yasmien Zafira Arini </p>
+                        <p>Role 6</p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow right-arrow">&gt;</div>
+        </div>
+    </div>
+    
+    <div class="logo-section">
+        <img src="WhatsApp Image 2024-10-18 at 1.20.44 PM.jpeg" alt="logo" style="border-radius: 50%; height: 200px; width: 200px;">
+        <div class="navigation-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>    
+</body>
+</html>
